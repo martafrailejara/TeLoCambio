@@ -19,9 +19,9 @@ Usuario: MartaFra
 Contrasena: marta
 -----------------------------------
 (Usuarios)
-Usuario: ClaudiaRui
+//// Usuario: ClaudiaRui
 Contrasena: claudia
-Usuario: CarlosSan
+//// Usuario: CarlosSan
 Contrasena: carlos
 
 
