@@ -1,0 +1,869 @@
+.botones-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Espacio entre el contenido anterior y los botones */
+    gap: 20px; /* Espacio entre los botones */
+  }
+  
+  .n-boton {
+    background-color: #0B3954;
+    color: white;
+    border: 1px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .n-boton:hover {
+    background-color: #336f91;
+  }
+  
+  .n-boton a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .descripcion-turnos {
+    text-align: center;
+  }
+  
+  h2 {
+      text-align: center;
+  }
+
+  .encabezado {
+    text-align: center;
+    margin-bottom: 50px; /* Espacio entre el encabezado y la tabla */
+  }
+  
+  .logo {
+    width: 100px; /* Ancho del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 50%; /* Para hacer el logo redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .titulo {
+    color: #0B3954; /* Color del título */
+    font-size: 24px; /* Tamaño del título */
+    margin-top: 10px; /* Espacio entre el logo y el título */
+  }
+  
+  .slogan {
+    color: #777; /* Color del slogan */
+    font-style: italic; /* Estilo de fuente cursiva para el slogan */
+    margin-top: 5px; /* Espacio entre el título y el slogan */
+  }
+
+.form-container {
+    background-color: white;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 100%; /* Ancho del 100% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.campana {
+  align-items: center;
+  color: #0B3954;
+  font-size: 4rem; /* Tamaño del icono */
+  background-color: #BFD7EA;
+  padding: 5px;
+  border-radius: 20%;
+}
+
+.campana-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.calendario-eventos {
+  background-color: #f2f2f2; /* Color de fondo gris */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  max-width: 75%; /* Ancho máximo del contenedor */
+  margin: 40px auto 0; /* Margen superior de 20px, centrado horizontalmente */
+}
+
+.calendario-eventos h3 {
+  text-align: center; /* Centrar texto */
+}
+
+.calendario-eventos ul {
+  list-style: none; /* Eliminar viñetas */
+  padding: 0;
+}
+
+.calendario-eventos li:before {
+  content: "+"; /* Cambiar puntos por cruces */
+  color: #0B3954; /* Color rojo para cruces */
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.lista-trabajadores-menu {
+  list-style: none; /* Eliminar viñetas */
+  padding: 0; /* Eliminar espaciado interno */
+}
+
+.lista-trabajadores-menu li {
+  margin-bottom: 10px; /* Espaciado entre elementos */
+  border-bottom: 1px solid #ddd; /* Línea divisoria entre elementos */
+  padding-bottom: 10px; /* Espaciado interno inferior */
+}
+
+.lista-trabajadores-menu li:last-child {
+  border-bottom: none; /* Eliminar línea divisoria del último elemento */
+}
+
+.lista-trabajadores-menu li strong {
+  color: #333; /* Color del texto en negrita */
+}
+
+.lista-trabajadores-menu li span {
+  color: #666; /* Color del texto secundario */
+}
+
+.lista-trabajadores-menu li:hover {
+  background-color: #ececec; /* Cambio de color al pasar el cursor */
+}
+
+/*
+*
+*
+*
+*
+*/
+body.alta {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container-alta {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1.alta {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form.alta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.input-group-alta {
+  display: flex;
+  flex-direction: column;
+}
+
+label.alta {
+  margin-bottom: 5px;
+}
+
+input[type="text"].alta,
+input[type="email"].alta,
+input[type="password"].alta,
+input[type="number"].alta,
+select.alta {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #0B3954;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.error-message-alta {
+  color: red;
+  grid-column: span 2;
+}
+
+input[type="checkbox"].alta {
+  width: 25px; /* Tamaño personalizado del checkbox */
+  height: 25px;
+  margin-right: 10px; 
+  vertical-align: middle;
+}
+
+.n-boton-alta {
+  grid-column: span 2; /* Para que ocupe todo el ancho */
+  text-align: center; 
+  background-color: #0B3954;
+  color: white;
+  border: 1px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.n-boton-alta:hover {
+  background-color: #336f91;
+}
+
+.n-boton-alta a {
+  text-decoration: none;
+  color: white;
+}
+
+.n-boton-alta input[type="submit"] {
+  width: 100%; /* El botón ocupa todo el ancho del contenedor */
+}
+
+.form-container-alta ul {
+  list-style: none; /* Eliminar viñetas */
+  padding: 0;
+}
+
+.form-container-alta {
+  background-color: white;
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  width: 100%; /* Ancho del 100% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.form-container-alta li:before {
+  content: "+"; /* Cambiar puntos por cruces */
+  color: #0B3954; /* Color rojo para cruces */
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+*
+*
+*
+*
+*/
+.tabla-container {
+  overflow-x: auto; /* Permitir desplazamiento horizontal en dispositivos pequeños */
+}
+
+#tabla-turnos {
+  width: 100%;
+  border-collapse: collapse;
+  border: 5px solid #0B3954; /* Grosor del borde externo y color */
+  overflow: hidden; /* Para aplicar bordes redondeados a las celdas */
+  box-shadow: 0 15px 8px rgba(0, 0, 0, 0.2); /* Sombras suave */
+}
+
+#tabla-turnos th, #tabla-turnos td {
+  padding: 12px;
+  text-align: center;
+}
+
+#tabla-turnos th {
+  background-color: #0B3954; /* Gris oscuro para el encabezado */
+  color: #fff;
+  font-weight: bold;
+}
+
+#tabla-turnos td {
+  background-color: #f2f2f2; /* Gris claro para las celdas de datos */
+}
+
+#tabla-turnos td:hover {
+  background-color: #D0D0D0; /* Cambiar el color de fondo */
+  cursor: pointer; /* Cambiar el cursor */
+}
+
+#tabla-turnos th,
+#tabla-turnos td {
+  border: 2px solid #0B3954; /* Borde de color gris medio */
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+*
+*
+*
+*
+*/
+    .form-container-dep {
+      background-color: white;
+      border-radius: 10px; /* Bordes redondeados */
+      padding: 20px; /* Espaciado interno */
+      width: 50%; /* Ancho del 100% */
+      margin: 0 auto; /* Centrar horizontalmente */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  
+  .input-group-dep {
+      margin-bottom: 20px;
+      flex: 0 0 calc(50% - 20px); /* Dos columnas con espacio entre ellas */
+      padding-right: 40px; /* Espacio entre los elementos en la misma fila */
+      box-sizing: border-box; /* Considerar el relleno y el borde dentro del ancho */
+  }
+  
+  
+  .input-group-dep label {
+      display: block;
+      margin-bottom: 5px;
+  }
+  
+  .input-group-dep input[type="text"],
+  .input-group-dep textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      resize: vertical; /* Permitir la redimensión vertical del textarea */
+  }
+  
+  /* Estilos para los botones dentro de los formularios */
+  .input-group-dep button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  .input-group-dep button:hover {
+      background-color: #0056b3;
+  }
+  
+  .n-boton-dep {
+      background-color: #0B3954;
+      color: white;
+      border: 1px;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*
+*
+*
+*
+*/
+    .estado-notificacion {
+      margin-top: 10px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: white;
+      display: inline-block;
+      background-color: green;
+    }
+    .remite {
+      background-color: #CFCFCF;
+      padding: 10px;
+    }
+    .detalle .variable {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .nombre {
+      font-weight: bold;
+      font-size: 1.2em; /* Ajusta el valor según tus necesidades */
+    }
+
+
+
+
+
+    .botones-container2 {
+      display: flex;
+      justify-content: flex-start; /* Alinea el contenido a la izquierda */
+      gap: 10px; /* Espacio entre los botones */
+    }
+    
+
+
+
+
+
+
+  
+
+
+
+/*
+*
+*
+*
+*
+*/
+    .container-tur {
+      width: 80%;
+      max-width: 800px;
+      margin: 20px auto; /* Esto alinea horizontalmente al centro */
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      align-items: center;
+      text-align: center; /* Esto alinea el contenido dentro del contenedor al centro */
+  }
+
+  .container-tur2 {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto; /* Esto alinea horizontalmente al centro */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center; /* Esto alinea el contenido dentro del contenedor al centro */
+}
+  
+  .botones-container-tur {
+      display: flex;
+      flex-direction: column; /* Alinea los elementos verticalmente */
+      align-items: center; /* Centra horizontalmente */
+  }
+  
+  .n-boton-tur {
+      background-color: #0B3954;
+      color: white;
+      border: 1px;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-top: 10px; /* Reduce el espacio entre los botones */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+  }
+  
+  select {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    width: 100%; /* Para ocupar todo el ancho del contenedor */
+}
+
+/* Estilo de los options */
+select option {
+    background-color: #fff; /* Color de fondo */
+    color: #333; /* Color del texto */
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Estilo del hover y focus */
+select option:hover,
+select option:focus {
+    background-color: #f0f0f0; /* Color de fondo cuando se pasa el cursor */
+}
+
+
+
+
+
+
+  .form-container2 {
+    background-color: white;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    width: 100%; /* Ancho del 100% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+
+   /* Estilo para las estrellas grises */
+   .estrellas-calificaciones {
+    font-size: 50px; /* Tamaño de las estrellas */
+    color: #ccc; /* Color gris por defecto */
+}
+
+/* Estilo para las estrellas amarillas */
+.estrellas-calificaciones.amarillo {
+    color: gold; /* Color amarillo */
+}
+.turno-calificaciones {
+    background-color: white;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 100%; /* Ancho del 100% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto más suave */
+}
+/* Estilo para el nombre y apellido del valorador */
+.valorador-nombre {
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del texto */
+}
+.nombre-calificaciones {
+    background-color: #CFCFCF;
+    padding: 10px;
+}
+.comentario-calificaciones {
+font-style: italic; /* Estilo cursiva */
+color: #666; /* Color del texto */
+margin-left: 20px; /* Margen izquierdo para separar del nombre y la puntuación */
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilos adicionales para el botón de búsqueda */
+.search-container-wrapper {
+  display: flex;
+  justify-content: center; /* Centra el contenedor de búsqueda */
+  margin-bottom: 10px; /* Espacio debajo del formulario */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-container input[type="text"] {
+  padding: 3px;
+  font-size: 15px;
+  align-items: center;
+}
+
+.search-container button {
+  background: #0B3954;
+  color: white;
+  padding: 5px;
+  border: 1cm;
+  cursor: pointer;
+}
+
+.search-container button i {
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background: #0B3954;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidebar.open{
+  width: 250px;
+}
+.sidebar .logo-details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidebar .logo-details .icon {
+  width: 50px; /* Ajusta el ancho según tus necesidades */
+  height: 50px; /* Ajusta la altura según tus necesidades */
+  margin-right: 10px; /* Espacio a la derecha para separar del texto */
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+
+.sidebar .logo-details .logo_name {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name {
+  opacity: 1;
+}
+
+.sidebar .logo-details #btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sidebar.open .logo-details #btn {
+  text-align: right;
+}
+
+.sidebar i{
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidebar .nav-list{
+  margin-top: 20px;
+  height: 100%;
+}
+.sidebar li{
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidebar li .tooltip{
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar li:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidebar.open li .tooltip{
+  display: none;
+}
+.sidebar input{
+  font-size: 15px;
+  color: #FFF;
+  font-weight: 400;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  width: 50px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  background: #041620;
+}
+.sidebar.open input{
+  padding: 0 20px 0 50px;
+  width: 100%;
+}
+.sidebar .bx-search{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  background: #041620;
+  color: #FFF;
+}
+.sidebar.open .bx-search:hover{
+  background: #041620;
+  color: #FFF;
+}
+.sidebar .bx-search:hover{
+  background: #FFF;
+  color: #11101d;
+}
+.sidebar li a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #0B3954;
+}
+.sidebar li a:hover{
+  background: #FFF;
+}
+.sidebar li a .links_name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidebar.open li a .links_name{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i{
+  transition: all 0.5s ease;
+  color: #11101D;
+}
+.sidebar li i{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+.sidebar li.profile{
+  position: fixed;
+  height: 60px;
+  width: 78px;
+  left: 0;
+  bottom: -8px;
+  padding: 10px 14px;
+  background: #041620;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.sidebar.open li.profile{
+  width: 250px;
+}
+.sidebar li .profile-details{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.sidebar li img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.sidebar li.profile .name,
+.sidebar li.profile .job{
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+}
+.sidebar li.profile .job{
+  font-size: 12px;
+}
+.sidebar .profile #log_out{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: red;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+}
+.sidebar.open .profile #log_out{
+  width: 50px;
+  background: red;
+}
+.home-section{
+  position: relative;
+  background: #dae4ed;
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
+  padding: 50px; /* Agrega un relleno para los márgenes internos */
+}
+.sidebar.open ~ .home-section{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+.home-section .text{
+  display: inline-block;
+  color: #11101d;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px
+}
+@media (max-width: 420px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+}

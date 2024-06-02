@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #f6f5f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -40px 0 50px; /* Aumentar el margen superior para compensar el aumento de tamaño */
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+	font-size: 36px; /* Aumentar el tamaño de la fuente */
+}
+
+h2 {
+	text-align: center;
+	font-size: 24px; /* Aumentar el tamaño de la fuente */
+}
+
+p {
+	font-size: 18px; /* Aumentar el tamaño de la fuente */
+	font-weight: 100;
+	line-height: 24px; /* Aumentar el tamaño de la línea */
+	letter-spacing: 1px; /* Aumentar el espacio entre letras */
+	margin: 30px 0; /* Aumentar el espacio superior e inferior */
+}
+
+span {
+	font-size: 16px; /* Aumentar el tamaño de la fuente */
+}
+
+a {
+	color: #333;
+	font-size: 18px; /* Aumentar el tamaño de la fuente */
+	text-decoration: none;
+	margin: 20px 0; /* Aumentar el espacio superior e inferior */
+}
+
+button {
+	border-radius: 30px; /* Aumentar el radio de borde */
+	border: 3px solid #BFD7EA; /* Aumentar el grosor del borde */
+	background-color: #0B3954;
+	color: #FFFFFF;
+	font-size: 16px; /* Aumentar el tamaño de la fuente */
+	font-weight: bold;
+	padding: 15px 55px; /* Aumentar el relleno */
+	letter-spacing: 2px; /* Aumentar el espacio entre letras */
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 60px; /* Aumentar el relleno lateral */
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 15px 20px; /* Aumentar el relleno */
+	margin: 12px 0; /* Aumentar el espacio entre campos */
+	width: 100%;
+	font-size: 16px; /* Aumentar el tamaño de la fuente */
+}
+
+.imagen {
+    max-width: 60%; /* Aumentar el tamaño máximo de la imagen */
+    height: auto; 
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 15px; /* Aumentar el radio de borde */
+  	box-shadow: 0 20px 40px rgba(0,0,0,0.25), 
+			0 15px 15px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	min-width: 1000px; /* Ajustar el ancho máximo */
+	min-height: 560px; /* Ajustar la altura mínima */
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: #411c25;
+	background: -webkit-linear-gradient(to right,  #7678ED, #ED6A5E);
+	background: linear-gradient(to right,   #7678ED, #ED6A5E);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px; /* Ajustar el relleno lateral */
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+.social-container {
+	margin: 30px 0; /* Aumentar el espacio superior e inferior */
+}
+
+.social-container a {
+	border: 2px solid #DDDDDD; /* Aumentar el grosor del borde */
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px; /* Aumentar el espacio entre íconos */
+	height: 50px; /* Aumentar el tamaño de los íconos */
+	width: 50px; /* Aumentar el tamaño de los íconos */
+	font-size: 24px; /* Aumentar el tamaño de los íconos */
+	text-decoration: none;
+	color: #333; /* Cambiar el color de los íconos */
+}
+
