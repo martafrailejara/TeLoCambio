@@ -21,7 +21,6 @@ Contrasena: marta
 (Usuarios)
 Usuario: ClaudiaRui
 Contrasena: claudia
--
 Usuario: CarlosSan
 Contrasena: carlos
 
